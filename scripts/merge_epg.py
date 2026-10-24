@@ -1,4 +1,5 @@
 import requests, gzip, xml.etree.ElementTree as ET
+from datetime import datetime, timedelta
 
 SOURCES = [
     "https://www.open-epg.com/files/turkey4.xml.gz",
@@ -7,19 +8,15 @@ SOURCES = [
 ]
 
 tv = ET.Element('tv')
-seen=set()
+channels = {} # id -> display-name
+prog_channels = set()
 
 def normalize_id(cid):
     if not cid: return ""
     cid = cid.strip()
     if "KABLO" in cid.upper(): return None
-    # .tr varsa sil
-    if cid.lower().endswith(".tr"):
-        cid = cid[:-3]
-    # @HD gibi şeyleri sil
-    cid = cid.split("@")[0]
-    # noktayı koru, sadece .tr'yi sildik
-    cid = cid.strip(".")
+    if cid.lower().endswith(".tr"): cid = cid[:-3]
+    cid = cid.split("@")[0].strip(".")
     return cid
 
 for url in SOURCES:
@@ -28,22 +25,39 @@ for url in SOURCES:
         if url.endswith('.gz'): data = gzip.decompress(data)
         root = ET.fromstring(data)
         for ch in root.findall('channel'):
-            new = normalize_id(ch.get('id',''))
-            if not new: continue
-            ch.set('id', new)
-            if new not in seen:
-                seen.add(new)
+            nid = normalize_id(ch.get('id',''))
+            if not nid: continue
+            dn = ch.find('display-name')
+            name = dn.text if dn is not None and dn.text else nid
+            if nid not in channels:
+                channels[nid] = name
+                ch.set('id', nid)
                 tv.append(ch)
         for p in root.findall('programme'):
-            new = normalize_id(p.get('channel',''))
-            if not new: continue
-            p.set('channel', new)
+            nid = normalize_id(p.get('channel',''))
+            if not nid: continue
             t = p.find('title')
             if t is None or not t.text: continue
             if "kablo" in t.text.lower(): continue
+            p.set('channel', nid)
+            prog_channels.add(nid)
             tv.append(p)
     except Exception as e:
         print(e)
 
+# EPG'si olmayanlara kendi ismini yaz
+now = datetime.utcnow()
+start = now.strftime("%Y%m%d%H%M%S +0000")
+stop = (now + timedelta(hours=12)).strftime("%Y%m%d%H%M%S +0000")
+
+for cid, name in channels.items():
+    if cid not in prog_channels:
+        prog = ET.Element('programme', {'channel': cid, 'start': start, 'stop': stop})
+        title = ET.SubElement(prog, 'title', {'lang': 'tr'})
+        title.text = name  # Kanal ismi
+        desc = ET.SubElement(prog, 'desc', {'lang': 'tr'})
+        desc.text = f"{name} yayını"
+        tv.append(prog)
+
 ET.ElementTree(tv).write('epg.xml', encoding='utf-8', xml_declaration=True)
-print(f"Bitti -> {len(seen)} kanal, .tr'siz")
+print(f"Bitti -> {len(channels)} kanal, {len(channels)-len(prog_channels)} tanesine isim eklendi")
