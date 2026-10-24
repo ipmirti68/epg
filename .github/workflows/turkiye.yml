@@ -1,61 +1,32 @@
 name: Turkiye EPG
-
 on:
   push:
-    branches: [main, master]
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: "30 22 * * *"
-
 permissions:
   contents: write
-
 jobs:
-  merge:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-
-      - name: Gereklileri kur
-        run: pip install requests lxml
-
-      - name: EPG birlestir
+          python-version: "3.11"
+      - run: pip install requests
+      - run: python scripts/merge_epg.py
+      - name: KABLO'yu zorla sil
         run: |
-          mkdir -p scripts
-          cat > scripts/merge_epg.py << 'PY'
-          import requests, gzip, xml.etree.ElementTree as ET
-          urls = [
-            "https://epgshare01.online/epgshare01/epg_ripper_TR1.xml.gz",
-            "https://epgshare01.online/epgshare01/epg_ripper_TR3.xml.gz",
-            "https://raw.githubusercontent.com/serhatyilmaz55/epg/main/tr.xml"
-          ]
-          root = ET.Element('tv')
-          for url in urls:
-            try:
-              print(f"Indiriliyor: {url}")
-              r = requests.get(url, timeout=60)
-              data = r.content
-              if url.endswith('.gz'):
-                data = gzip.decompress(data)
-              tree = ET.fromstring(data)
-              for ch in tree.findall('channel'):
-                if not root.find(f"./channel[@id='{ch.get('id')}']") is not None: continue
-                root.append(ch)
-              for pr in tree.findall('programme'):
-                root.append(pr)
-            except Exception as e:
-              print(f"Hata {url}: {e}")
-          ET.ElementTree(root).write('epg.xml', encoding='utf-8', xml_declaration=True)
-          PY
-          python scripts/merge_epg.py
-
-      - name: Kaydet
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "actions@github.com"
+          sed -i '/KABLO.INFO/d' epg.xml
+          sed -i '/KABLO Info/d' epg.xml
+          sed -i '/KABLO/d' epg.xml
+          echo "KABLO silindi, kalan boyut:"
+          ls -lh epg.xml
+      - run: |
+          git config user.name "bot"
+          git config user.email "bot@bot.com"
           git add epg.xml
-          git diff --cached --quiet || (git commit -m "EPG guncelleme" && git push)
+          git commit -m "kablo temiz" || echo "degisiklik yok"
+          git push
