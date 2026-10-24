@@ -7437,33 +7437,21 @@
 <programme start="20261025200000 +0000" stop="20261025235900 +0000" channel="YABAN TV"><title>Sizin Av Safariniz</title><desc>Sizin Av Safariniz</desc></programme>
 <channel id="24"><display-name>24</display-name></channel>
 <channel id="a Haber"><display-name>a Haber</display-name></channel>
-<channel id="a News"><display-name>a News</display-name></channel>
-<channel id="A Para"><display-name>A Para</display-name></channel>
-<channel id="a Spor"><display-name>a Spor</display-name></channel>
-<channel id="a2"><display-name>a2</display-name></channel>
 <channel id="Agro TV"><display-name>Agro TV</display-name></channel>
 <channel id="Akit TV"><display-name>Akit TV</display-name></channel>
 <channel id="AS TV"><display-name>AS TV</display-name></channel>
 <channel id="Azoomee"><display-name>Azoomee</display-name></channel>
-<channel id="Baby TV"><display-name>Baby TV</display-name></channel>
-<channel id="BBC Earth"><display-name>BBC Earth</display-name></channel>
-<channel id="BBC World News"><display-name>BBC World News</display-name></channel>
 <channel id="Bengütürk TV"><display-name>Bengütürk TV</display-name></channel>
-<channel id="Beyaz TV"><display-name>Beyaz TV</display-name></channel>
 <channel id="Bİ Kanal"><display-name>Bİ Kanal</display-name></channel>
 <channel id="Bir Tv"><display-name>Bir Tv</display-name></channel>
-<channel id="Bloomberg HT"><display-name>Bloomberg HT</display-name></channel>
-<channel id="Cartoon Network"><display-name>Cartoon Network</display-name></channel>
 <channel id="Cartoonito"><display-name>Cartoonito</display-name></channel>
 <channel id="CNBC-E"><display-name>CNBC-E</display-name></channel>
-<channel id="CNN International"><display-name>CNN International</display-name></channel>
 <channel id="CNN Türk"><display-name>CNN Türk</display-name></channel>
 <channel id="Çocuk Smart"><display-name>Çocuk Smart</display-name></channel>
 <channel id="Cosmo Sports"><display-name>Cosmo Sports</display-name></channel>
 <channel id="Da Vinci Learning"><display-name>Da Vinci Learning</display-name></channel>
 <channel id="Discovery ID"><display-name>Discovery ID</display-name></channel>
 <channel id="Discovery"><display-name>Discovery</display-name></channel>
-<channel id="Disney Junior"><display-name>Disney Junior</display-name></channel>
 <channel id="Diyanet Tv"><display-name>Diyanet Tv</display-name></channel>
 <channel id="Dizi Smart Max"><display-name>Dizi Smart Max</display-name></channel>
 <channel id="Dizi Smart Premium"><display-name>Dizi Smart Premium</display-name></channel>
@@ -7471,30 +7459,22 @@
 <channel id="Dream Türk"><display-name>Dream Türk</display-name></channel>
 <channel id="Dream TV"><display-name>Dream TV</display-name></channel>
 <channel id="Ekol Sports"><display-name>Ekol Sports</display-name></channel>
-<channel id="Ekol TV"><display-name>Ekol TV</display-name></channel>
 <channel id="Ekotürk"><display-name>Ekotürk</display-name></channel>
 <channel id="Es TV"><display-name>Es TV</display-name></channel>
 <channel id="Euro D"><display-name>Euro D</display-name></channel>
 <channel id="Euro Star"><display-name>Euro Star</display-name></channel>
-<channel id="Eurosport 2"><display-name>Eurosport 2</display-name></channel>
 <channel id="Eurosport"><display-name>Eurosport</display-name></channel>
-<channel id="Fashion TV"><display-name>Fashion TV</display-name></channel>
 <channel id="Film Screen"><display-name>Film Screen</display-name></channel>
-<channel id="Flash Haber"><display-name>Flash Haber</display-name></channel>
 <channel id="FX"><display-name>FX</display-name></channel>
 <channel id="Gamescreen"><display-name>Gamescreen</display-name></channel>
 <channel id="GZT TV"><display-name>GZT TV</display-name></channel>
 <channel id="Haber Global"><display-name>Haber Global</display-name></channel>
 <channel id="Haber Türk"><display-name>Haber Türk</display-name></channel>
-<channel id="Halk TV"><display-name>Halk TV</display-name></channel>
 <channel id="History Channel"><display-name>History Channel</display-name></channel>
-<channel id="HT Spor"><display-name>HT Spor</display-name></channel>
 <channel id="KANAL 23"><display-name>KANAL 23</display-name></channel>
 <channel id="Kanal 26"><display-name>Kanal 26</display-name></channel>
 <channel id="Kanal 3"><display-name>Kanal 3</display-name></channel>
-<channel id="Kanal 7"><display-name>Kanal 7</display-name></channel>
 <channel id="Kanal B"><display-name>Kanal B</display-name></channel>
-<channel id="Kanal D"><display-name>Kanal D</display-name></channel>
 <channel id="Kanal Fırat"><display-name>Kanal Fırat</display-name></channel>
 <channel id="Kanal V"><display-name>Kanal V</display-name></channel>
 <channel id="Kardelen TV"><display-name>Kardelen TV</display-name></channel>
@@ -7520,7 +7500,6 @@
 <channel id="Russia-24"><display-name>Russia-24</display-name></channel>
 <channel id="Saudi Quran TV"><display-name>Saudi Quran TV</display-name></channel>
 <channel id="Saudi Sunnah TV"><display-name>Saudi Sunnah TV</display-name></channel>
-<channel id="Show TV"><display-name>Show TV</display-name></channel>
 <channel id="ShowMax"><display-name>ShowMax</display-name></channel>
 <channel id="Sinema Tv 1001"><display-name>Sinema Tv 1001</display-name></channel>
 <channel id="Sinema Tv 1002"><display-name>Sinema Tv 1002</display-name></channel>
@@ -7548,24 +7527,15 @@
 <channel id="teve2"><display-name>teve2</display-name></channel>
 <channel id="TGRT Belgesel"><display-name>TGRT Belgesel</display-name></channel>
 <channel id="TGRT EU"><display-name>TGRT EU</display-name></channel>
-<channel id="TGRT Haber"><display-name>TGRT Haber</display-name></channel>
 <channel id="TMB"><display-name>TMB</display-name></channel>
-<channel id="trt 2"><display-name>trt 2</display-name></channel>
 <channel id="TRT 3 Spor"><display-name>TRT 3 Spor</display-name></channel>
 <channel id="TRT 4K"><display-name>TRT 4K</display-name></channel>
 <channel id="TRT Arabi"><display-name>TRT Arabi</display-name></channel>
-<channel id="TRT Avaz"><display-name>TRT Avaz</display-name></channel>
-<channel id="TRT Belgesel"><display-name>TRT Belgesel</display-name></channel>
-<channel id="TRT Çocuk"><display-name>TRT Çocuk</display-name></channel>
 <channel id="TRT Diyanet Çocuk"><display-name>TRT Diyanet Çocuk</display-name></channel>
 <channel id="TRT EBA TV"><display-name>TRT EBA TV</display-name></channel>
-<channel id="TRT Haber"><display-name>TRT Haber</display-name></channel>
-<channel id="TRT Kurdi"><display-name>TRT Kurdi</display-name></channel>
 <channel id="TRT Müzik"><display-name>TRT Müzik</display-name></channel>
 <channel id="TRT Spor Yıldız"><display-name>TRT Spor Yıldız</display-name></channel>
-<channel id="TRT Spor"><display-name>TRT Spor</display-name></channel>
 <channel id="TRT Türk"><display-name>TRT Türk</display-name></channel>
-<channel id="TRT World"><display-name>TRT World</display-name></channel>
 <channel id="Türkçe POP"><display-name>Türkçe POP</display-name></channel>
 <channel id="Turkish Silk"><display-name>Turkish Silk</display-name></channel>
 <channel id="Tv 100"><display-name>Tv 100</display-name></channel>
@@ -7575,10 +7545,6 @@
 <channel id="TV 8,5"><display-name>TV 8,5</display-name></channel>
 <channel id="TV Net"><display-name>TV Net</display-name></channel>
 <channel id="TV4"><display-name>TV4</display-name></channel>
-<channel id="TYT Türk"><display-name>TYT Türk</display-name></channel>
-<channel id="Ülke TV"><display-name>Ülke TV</display-name></channel>
-<channel id="Ulusal TV"><display-name>Ulusal TV</display-name></channel>
-<channel id="Vav TV"><display-name>Vav TV</display-name></channel>
 <channel id="Viasat History"><display-name>Viasat History</display-name></channel>
 <channel id="Yıldız En TV"><display-name>Yıldız En TV</display-name></channel>
 <programme start="20261023220000 +0000" stop="20261023230000 +0000" channel="24"><title>Günün Manşeti</title><desc>"Günün Manşeti" hafta içi her sabah saat 11.00’de canlı yayınla 24 TV’de ekrana geliyor.</desc></programme>
@@ -11759,19 +11725,16 @@
 <channel id="BEYAZ TV HD"><display-name>BEYAZ TV HD</display-name></channel>
 <channel id="BİZİM EV TV"><display-name>BİZİM EV TV</display-name></channel>
 <channel id="BLOOMBERG HT HD"><display-name>BLOOMBERG HT HD</display-name></channel>
-<channel id="Bloomberg"><display-name>Bloomberg</display-name></channel>
 <channel id="BluTV Play 1"><display-name>BluTV Play 1</display-name></channel>
 <channel id="BluTV Play 2"><display-name>BluTV Play 2</display-name></channel>
 <channel id="BRT 1 HD"><display-name>BRT 1 HD</display-name></channel>
 <channel id="BRT 2 HD"><display-name>BRT 2 HD</display-name></channel>
-<channel id="CARTOONITO"><display-name>CARTOONITO</display-name></channel>
 <channel id="ÇİFTÇİ TV"><display-name>ÇİFTÇİ TV</display-name></channel>
 <channel id="CNN TÜRK HD"><display-name>CNN TÜRK HD</display-name></channel>
 <channel id="DA VINCI HD"><display-name>DA VINCI HD</display-name></channel>
 <channel id="DEUTSCHE WELLE ENGLISH"><display-name>DEUTSCHE WELLE ENGLISH</display-name></channel>
 <channel id="DISCOVERY CHANNEL HD"><display-name>DISCOVERY CHANNEL HD</display-name></channel>
 <channel id="DMAX HD"><display-name>DMAX HD</display-name></channel>
-<channel id="DREAM TÜRK"><display-name>DREAM TÜRK</display-name></channel>
 <channel id="DUCK TV HD"><display-name>DUCK TV HD</display-name></channel>
 <channel id="EKOTÜRK HD"><display-name>EKOTÜRK HD</display-name></channel>
 <channel id="ENGLISH CLUB TV"><display-name>ENGLISH CLUB TV</display-name></channel>
@@ -11785,12 +11748,10 @@
 <channel id="HABER GLOBAL HD"><display-name>HABER GLOBAL HD</display-name></channel>
 <channel id="HABERTÜRK HD"><display-name>HABERTÜRK HD</display-name></channel>
 <channel id="KADIRGA TV"><display-name>KADIRGA TV</display-name></channel>
-<channel id="KANAL 26"><display-name>KANAL 26</display-name></channel>
 <channel id="KANAL 33"><display-name>KANAL 33</display-name></channel>
 <channel id="KANAL 7 HD"><display-name>KANAL 7 HD</display-name></channel>
 <channel id="KANAL D HD"><display-name>KANAL D HD</display-name></channel>
 <channel id="KANAL T"><display-name>KANAL T</display-name></channel>
-<channel id="KANAL V"><display-name>KANAL V</display-name></channel>
 <channel id="KIBRIS ADA TV"><display-name>KIBRIS ADA TV</display-name></channel>
 <channel id="KIBRIS GENC TV"><display-name>KIBRIS GENC TV</display-name></channel>
 <channel id="KIBRIS TV"><display-name>KIBRIS TV</display-name></channel>
@@ -11803,7 +11764,6 @@
 <channel id="NATIONAL GEOGRAPHIC HD"><display-name>NATIONAL GEOGRAPHIC HD</display-name></channel>
 <channel id="NATIONAL GEOGRAPHIC WILD HD"><display-name>NATIONAL GEOGRAPHIC WILD HD</display-name></channel>
 <channel id="NBA TV HD"><display-name>NBA TV HD</display-name></channel>
-<channel id="Nick JR"><display-name>Nick JR</display-name></channel>
 <channel id="NICKELODEON"><display-name>NICKELODEON</display-name></channel>
 <channel id="NICKTOONS"><display-name>NICKTOONS</display-name></channel>
 <channel id="NR1 DAMAR HD"><display-name>NR1 DAMAR HD</display-name></channel>
@@ -11830,12 +11790,10 @@
 <channel id="SİNEMA YERLİ HD"><display-name>SİNEMA YERLİ HD</display-name></channel>
 <channel id="SKY NEWS ARABIA"><display-name>SKY NEWS ARABIA</display-name></channel>
 <channel id="ŞÖMİNE PLUS"><display-name>ŞÖMİNE PLUS</display-name></channel>
-<channel id="SPACETOON"><display-name>SPACETOON</display-name></channel>
 <channel id="SPORTS TV HD"><display-name>SPORTS TV HD</display-name></channel>
 <channel id="STAR TV HD"><display-name>STAR TV HD</display-name></channel>
 <channel id="tabii spor"><display-name>tabii spor</display-name></channel>
 <channel id="tabii TV"><display-name>tabii TV</display-name></channel>
-<channel id="TARIH TV"><display-name>TARIH TV</display-name></channel>
 <channel id="TARIM TV"><display-name>TARIM TV</display-name></channel>
 <channel id="TELE1"><display-name>TELE1</display-name></channel>
 <channel id="TEVE2 HD"><display-name>TEVE2 HD</display-name></channel>
@@ -11844,7 +11802,6 @@
 <channel id="TMB TV"><display-name>TMB TV</display-name></channel>
 <channel id="TRT 2 HD"><display-name>TRT 2 HD</display-name></channel>
 <channel id="TRT 3"><display-name>TRT 3</display-name></channel>
-<channel id="TRT ARABI"><display-name>TRT ARABI</display-name></channel>
 <channel id="TRT BELGESEL HD"><display-name>TRT BELGESEL HD</display-name></channel>
 <channel id="TRT ÇOCUK HD"><display-name>TRT ÇOCUK HD</display-name></channel>
 <channel id="TRT DIYANET COCUK"><display-name>TRT DIYANET COCUK</display-name></channel>
@@ -11852,14 +11809,12 @@
 <channel id="TRT HABER HD"><display-name>TRT HABER HD</display-name></channel>
 <channel id="TRT KURDİ"><display-name>TRT KURDİ</display-name></channel>
 <channel id="TRT SPOR HD"><display-name>TRT SPOR HD</display-name></channel>
-<channel id="TRT TÜRK"><display-name>TRT TÜRK</display-name></channel>
 <channel id="TRT World HD"><display-name>TRT World HD</display-name></channel>
 <channel id="TRT1 HD"><display-name>TRT1 HD</display-name></channel>
 <channel id="TURKHABER"><display-name>TURKHABER</display-name></channel>
 <channel id="TV 2020"><display-name>TV 2020</display-name></channel>
 <channel id="TV 4"><display-name>TV 4</display-name></channel>
 <channel id="TV+ Info"><display-name>TV+ Info</display-name></channel>
-<channel id="TV100"><display-name>TV100</display-name></channel>
 <channel id="TV5 MONDE"><display-name>TV5 MONDE</display-name></channel>
 <channel id="TV5"><display-name>TV5</display-name></channel>
 <channel id="TV8 HD"><display-name>TV8 HD</display-name></channel>
@@ -23825,10 +23780,6 @@
 <programme start="20261026004500 +0000" stop="20261026014000 +0000" channel="VIASAT HISTORY HD"><title>Roma Mega Yapıları</title><desc>Jül Sezar'ın Roma İmparatorluğu'nu genişletme girişiminin parçası olan üç şehri keşfediyoruz; bilgisayar görüntüleri ve uzman görüşleriyle Roma mühendisliği harikalarının sırlarını açığa çıkarıyoruz.</desc><episode-num system="xmltv_ns">0.2.</episode-num></programme>
 <programme start="20261026014000 +0000" stop="20261026031500 +0000" channel="VIASAT HISTORY HD"><title>Lanetli Hazineler</title><desc>Çeşitli alanlardaki uzmanlar Tutankhamun'un mezarı, Toprak Askerler, Hope elması ve Amber Odası gibi büyüleyici ve lanetli objelerin sırlarını aydınlatmaya çalışır.</desc><episode-num system="xmltv_ns">0.1.</episode-num></programme>
 <programme start="20261026031500 +0000" stop="20261026043000 +0000" channel="VIASAT HISTORY HD"><title>Roma Mega Yapıları</title><desc>Jül Sezar'ın Roma İmparatorluğu'nu genişletme girişiminin parçası olan üç şehri keşfediyoruz; bilgisayar görüntüleri ve uzman görüşleriyle Roma mühendisliği harikalarının sırlarını açığa çıkarıyoruz.</desc><episode-num system="xmltv_ns">0.0.</episode-num></programme>
-<channel id="A Haber"><display-name>A Haber</display-name></channel>
-<channel id="A News"><display-name>A News</display-name></channel>
-<channel id="a Para"><display-name>a Para</display-name></channel>
-<channel id="A Spor"><display-name>A Spor</display-name></channel>
 <channel id="Akit"><display-name>Akit</display-name></channel>
 <channel id="Al Jazeera (Arapça)"><display-name>Al Jazeera (Arapça)</display-name></channel>
 <channel id="Al Jazeera (İngilizce)"><display-name>Al Jazeera (İngilizce)</display-name></channel>
@@ -23836,26 +23787,16 @@
 <channel id="Al Sunnah Al Nabawiya"><display-name>Al Sunnah Al Nabawiya</display-name></channel>
 <channel id="Arirang"><display-name>Arirang</display-name></channel>
 <channel id="AS"><display-name>AS</display-name></channel>
-<channel id="Atv"><display-name>Atv</display-name></channel>
 <channel id="Az TV"><display-name>Az TV</display-name></channel>
-<channel id="BabyTV"><display-name>BabyTV</display-name></channel>
 <channel id="Bengü Türk TV"><display-name>Bengü Türk TV</display-name></channel>
-<channel id="Bir TV"><display-name>Bir TV</display-name></channel>
-<channel id="Brt 1"><display-name>Brt 1</display-name></channel>
 <channel id="Bursa, TVON6"><display-name>Bursa, TVON6</display-name></channel>
 <channel id="Cctv 4"><display-name>Cctv 4</display-name></channel>
 <channel id="CGTN Documentary"><display-name>CGTN Documentary</display-name></channel>
 <channel id="Classical Harmony"><display-name>Classical Harmony</display-name></channel>
 <channel id="CosmoEN"><display-name>CosmoEN</display-name></channel>
 <channel id="CosmoSports"><display-name>CosmoSports</display-name></channel>
-<channel id="Discovery Channel"><display-name>Discovery Channel</display-name></channel>
-<channel id="Diyanet TV"><display-name>Diyanet TV</display-name></channel>
-<channel id="DocuSCREEN"><display-name>DocuSCREEN</display-name></channel>
 <channel id="Duck TV"><display-name>Duck TV</display-name></channel>
 <channel id="Dw Tv (İngilizce)"><display-name>Dw Tv (İngilizce)</display-name></channel>
-<channel id="English Club TV"><display-name>English Club TV</display-name></channel>
-<channel id="Epic Drama"><display-name>Epic Drama</display-name></channel>
-<channel id="Eurosport 1"><display-name>Eurosport 1</display-name></channel>
 <channel id="FILMSCREEN"><display-name>FILMSCREEN</display-name></channel>
 <channel id="France 24 (Fransızca)"><display-name>France 24 (Fransızca)</display-name></channel>
 <channel id="France 24 (İngilizce)"><display-name>France 24 (İngilizce)</display-name></channel>
@@ -23863,6 +23804,7 @@
 <channel id="HABERTÜRK TV"><display-name>HABERTÜRK TV</display-name></channel>
 <channel id="Hayat 2"><display-name>Hayat 2</display-name></channel>
 <channel id="ID"><display-name>ID</display-name></channel>
+<channel id="Kablo Info"><display-name>Kablo Info</display-name></channel>
 <channel id="Kbs World"><display-name>Kbs World</display-name></channel>
 <channel id="Kibris Genç TV"><display-name>Kibris Genç TV</display-name></channel>
 <channel id="Kitchen TV"><display-name>Kitchen TV</display-name></channel>
@@ -23872,16 +23814,12 @@
 <channel id="Lider Haber"><display-name>Lider Haber</display-name></channel>
 <channel id="Lingotoons"><display-name>Lingotoons</display-name></channel>
 <channel id="Love Nature"><display-name>Love Nature</display-name></channel>
-<channel id="Mezzo"><display-name>Mezzo</display-name></channel>
-<channel id="Minika Go"><display-name>Minika Go</display-name></channel>
 <channel id="Moonbug Kids"><display-name>Moonbug Kids</display-name></channel>
 <channel id="MyZEN TV"><display-name>MyZEN TV</display-name></channel>
-<channel id="National Geographic Wild"><display-name>National Geographic Wild</display-name></channel>
 <channel id="Nhk World"><display-name>Nhk World</display-name></channel>
 <channel id="OlayTürk"><display-name>OlayTürk</display-name></channel>
 <channel id="Planeta RTR"><display-name>Planeta RTR</display-name></channel>
 <channel id="Russia 24"><display-name>Russia 24</display-name></channel>
-<channel id="S Sport"><display-name>S Sport</display-name></channel>
 <channel id="S Sport2"><display-name>S Sport2</display-name></channel>
 <channel id="Saudi TV"><display-name>Saudi TV</display-name></channel>
 <channel id="Show"><display-name>Show</display-name></channel>
@@ -23894,31 +23832,22 @@
 <channel id="Sinema Aksiyon"><display-name>Sinema Aksiyon</display-name></channel>
 <channel id="Sinema Komedi 2"><display-name>Sinema Komedi 2</display-name></channel>
 <channel id="Sinema Komedi"><display-name>Sinema Komedi</display-name></channel>
-<channel id="Sinema TV"><display-name>Sinema TV</display-name></channel>
 <channel id="Sinema Yerli 2"><display-name>Sinema Yerli 2</display-name></channel>
 <channel id="Sinema Yerli"><display-name>Sinema Yerli</display-name></channel>
-<channel id="SpaceTOON"><display-name>SpaceTOON</display-name></channel>
 <channel id="SZC"><display-name>SZC</display-name></channel>
-<channel id="Tarih Tv"><display-name>Tarih Tv</display-name></channel>
-<channel id="TELE 1"><display-name>TELE 1</display-name></channel>
 <channel id="TH Türk Haber"><display-name>TH Türk Haber</display-name></channel>
 <channel id="Tinyteen"><display-name>Tinyteen</display-name></channel>
 <channel id="Trace Sport Stars"><display-name>Trace Sport Stars</display-name></channel>
 <channel id="Trace Urban"><display-name>Trace Urban</display-name></channel>
-<channel id="TRT Eba"><display-name>TRT Eba</display-name></channel>
 <channel id="TRT Genç"><display-name>TRT Genç</display-name></channel>
 <channel id="TRT Kurdî"><display-name>TRT Kurdî</display-name></channel>
 <channel id="Türkmeneli TV"><display-name>Türkmeneli TV</display-name></channel>
-<channel id="tv 100"><display-name>tv 100</display-name></channel>
 <channel id="TV 2 HD"><display-name>TV 2 HD</display-name></channel>
 <channel id="TV 42"><display-name>TV 42</display-name></channel>
 <channel id="Tv 5 Monde Europe"><display-name>Tv 5 Monde Europe</display-name></channel>
-<channel id="TV 5"><display-name>TV 5</display-name></channel>
 <channel id="TV 8"><display-name>TV 8</display-name></channel>
 <channel id="TV1"><display-name>TV1</display-name></channel>
-<channel id="Tvnet"><display-name>Tvnet</display-name></channel>
 <channel id="Ulusal 1"><display-name>Ulusal 1</display-name></channel>
-<channel id="Viasat Explore"><display-name>Viasat Explore</display-name></channel>
 <channel id="W Sport"><display-name>W Sport</display-name></channel>
 <programme start="20261024010000 +0000" stop="20261024020000 +0000" channel="24"><title>Günün Manşeti</title><desc>Günün Manşeti</desc></programme>
 <programme start="20261024020000 +0000" stop="20261024023000 +0000" channel="24"><title>Brifing Saati</title><desc>Brifing Saati</desc></programme>
@@ -31843,6 +31772,16 @@
 <programme start="20261026010000 +0000" stop="20261026020000 +0000" channel="ID"><title>Diddy'nin Çöküşü</title><desc>Diddy'nin Çöküşü</desc></programme>
 <programme start="20261026020000 +0000" stop="20261026030000 +0000" channel="ID"><title>Diddy'nin Çöküşü</title><desc>Diddy'nin Çöküşü</desc></programme>
 <programme start="20261026030000 +0000" stop="20261026040000 +0000" channel="ID"><title>O. J. Simpson'ın Sırları: Kötülük Sömürüsü</title><desc>O. J. Simpson'ın Sırları: Kötülük Sömürüsü</desc></programme>
+<programme start="20261024060000 +0000" stop="20261024100000 +0000" channel="Kablo Info"><title>KABLO İnfo</title><desc>KABLO İnfo</desc></programme>
+<programme start="20261024100000 +0000" stop="20261024140000 +0000" channel="Kablo Info"><title>KABLO İnfo</title><desc>KABLO İnfo</desc></programme>
+<programme start="20261024140000 +0000" stop="20261024180000 +0000" channel="Kablo Info"><title>KABLO İnfo</title><desc>KABLO İnfo</desc></programme>
+<programme start="20261024180000 +0000" stop="20261024220000 +0000" channel="Kablo Info"><title>KABLO İnfo</title><desc>KABLO İnfo</desc></programme>
+<programme start="20261024220000 +0000" stop="20261025060000 +0000" channel="Kablo Info"><title>KABLO İnfo</title><desc>KABLO İnfo</desc></programme>
+<programme start="20261025060000 +0000" stop="20261025100000 +0000" channel="Kablo Info"><title>KABLO İnfo</title><desc>KABLO İnfo</desc></programme>
+<programme start="20261025100000 +0000" stop="20261025140000 +0000" channel="Kablo Info"><title>KABLO İnfo</title><desc>KABLO İnfo</desc></programme>
+<programme start="20261025140000 +0000" stop="20261025180000 +0000" channel="Kablo Info"><title>KABLO İnfo</title><desc>KABLO İnfo</desc></programme>
+<programme start="20261025180000 +0000" stop="20261025220000 +0000" channel="Kablo Info"><title>KABLO İnfo</title><desc>KABLO İnfo</desc></programme>
+<programme start="20261025220000 +0000" stop="20261026060000 +0000" channel="Kablo Info"><title>KABLO İnfo</title><desc>KABLO İnfo</desc></programme>
 <programme start="20261024001500 +0000" stop="20261024015000 +0000" channel="Kanal 7"><title>Sana Her Baktığımda</title><desc>Sana Her Baktığımda</desc></programme>
 <programme start="20261024015000 +0000" stop="20261024070000 +0000" channel="Kanal 7"><title>Tekrar</title><desc>Tekrar</desc></programme>
 <programme start="20261024070000 +0000" stop="20261024080000 +0000" channel="Kanal 7"><title>Kanal 7'de Sabah</title><desc>Kanal 7'de Sabah</desc></programme>
@@ -37965,45 +37904,33 @@
 <programme start="20261026010000 +0000" stop="20261026030000 +0000" channel="W-Sport"><title>Football: Serie A Women</title><desc>Football: Serie A Women</desc></programme>
 <programme start="20261026030000 +0000" stop="20261026042000 +0000" channel="W-Sport"><title>Netball Super League</title><desc>Netball Super League</desc></programme>
 <channel id="90’ LAR"><display-name>90’ LAR</display-name></channel>
-<channel id="A HABER"><display-name>A HABER</display-name></channel>
 <channel id="AKUSTİK"><display-name>AKUSTİK</display-name></channel>
 <channel id="AL JAZEERA ARABIC"><display-name>AL JAZEERA ARABIC</display-name></channel>
 <channel id="AL SUNNAH"><display-name>AL SUNNAH</display-name></channel>
 <channel id="ANEWS"><display-name>ANEWS</display-name></channel>
 <channel id="ARABESK"><display-name>ARABESK</display-name></channel>
-<channel id="BBC NEWS"><display-name>BBC NEWS</display-name></channel>
 <channel id="BENİM KANALIM"><display-name>BENİM KANALIM</display-name></channel>
 <channel id="BLUES"><display-name>BLUES</display-name></channel>
 <channel id="ÇALIŞIRKEN"><display-name>ÇALIŞIRKEN</display-name></channel>
 <channel id="CNBC"><display-name>CNBC</display-name></channel>
-<channel id="CNN TÜRK"><display-name>CNN TÜRK</display-name></channel>
 <channel id="Cosmo EN"><display-name>Cosmo EN</display-name></channel>
-<channel id="COSMO SPORTS"><display-name>COSMO SPORTS</display-name></channel>
-<channel id="DA VINCI"><display-name>DA VINCI</display-name></channel>
 <channel id="DEUTSCHE WELLE"><display-name>DEUTSCHE WELLE</display-name></channel>
 <channel id="DİNİ MUSİKİ"><display-name>DİNİ MUSİKİ</display-name></channel>
 <channel id="DOST TV"><display-name>DOST TV</display-name></channel>
 <channel id="DREAM TÜRK TV"><display-name>DREAM TÜRK TV</display-name></channel>
-<channel id="EKOTÜRK"><display-name>EKOTÜRK</display-name></channel>
 <channel id="FIGHT NETWORK"><display-name>FIGHT NETWORK</display-name></channel>
 <channel id="FİLM MÜZİKLERİ"><display-name>FİLM MÜZİKLERİ</display-name></channel>
 <channel id="FILMSCREEN INTERNATIONAL"><display-name>FILMSCREEN INTERNATIONAL</display-name></channel>
 <channel id="FLASH TV"><display-name>FLASH TV</display-name></channel>
 <channel id="FRANCE 24"><display-name>FRANCE 24</display-name></channel>
-<channel id="HABER GLOBAL"><display-name>HABER GLOBAL</display-name></channel>
 <channel id="HABERTÜRK"><display-name>HABERTÜRK</display-name></channel>
 <channel id="HABİTAT TV"><display-name>HABİTAT TV</display-name></channel>
 <channel id="HT SPOR HD"><display-name>HT SPOR HD</display-name></channel>
 <channel id="JAZZ"><display-name>JAZZ</display-name></channel>
 <channel id="KLASİK MÜZİK"><display-name>KLASİK MÜZİK</display-name></channel>
-<channel id="KON TV"><display-name>KON TV</display-name></channel>
 <channel id="LALEGÜL"><display-name>LALEGÜL</display-name></channel>
 <channel id="LOUNGE"><display-name>LOUNGE</display-name></channel>
-<channel id="LOVE NATURE"><display-name>LOVE NATURE</display-name></channel>
-<channel id="MOONBUG"><display-name>MOONBUG</display-name></channel>
 <channel id="MUTLU"><display-name>MUTLU</display-name></channel>
-<channel id="NATIONAL GEOGRAPHIC WILD"><display-name>NATIONAL GEOGRAPHIC WILD</display-name></channel>
-<channel id="NATIONAL GEOGRAPHIC"><display-name>NATIONAL GEOGRAPHIC</display-name></channel>
 <channel id="NHK WORLD JAPAN"><display-name>NHK WORLD JAPAN</display-name></channel>
 <channel id="NUMBER1 TÜRK"><display-name>NUMBER1 TÜRK</display-name></channel>
 <channel id="OLDIES"><display-name>OLDIES</display-name></channel>
@@ -38025,7 +37952,6 @@
 <channel id="SİNEMA TV"><display-name>SİNEMA TV</display-name></channel>
 <channel id="SİNEMA YERLİ 2"><display-name>SİNEMA YERLİ 2</display-name></channel>
 <channel id="SİNEMA YERLİ"><display-name>SİNEMA YERLİ</display-name></channel>
-<channel id="SZC TV"><display-name>SZC TV</display-name></channel>
 <channel id="TAŞ PLAK"><display-name>TAŞ PLAK</display-name></channel>
 <channel id="TİVİ 6"><display-name>TİVİ 6</display-name></channel>
 <channel id="TİVİBU ÇOCUK"><display-name>TİVİBU ÇOCUK</display-name></channel>
@@ -38035,17 +37961,11 @@
 <channel id="TİVİBU SPOR 4"><display-name>TİVİBU SPOR 4</display-name></channel>
 <channel id="TİVİBU SPOR"><display-name>TİVİBU SPOR</display-name></channel>
 <channel id="TİVİBU TANITIM"><display-name>TİVİBU TANITIM</display-name></channel>
-<channel id="TRT 3 SPOR"><display-name>TRT 3 SPOR</display-name></channel>
 <channel id="TRT DİYANET ÇOCUK"><display-name>TRT DİYANET ÇOCUK</display-name></channel>
 <channel id="TRT EL ARABIA"><display-name>TRT EL ARABIA</display-name></channel>
-<channel id="TRT GENÇ"><display-name>TRT GENÇ</display-name></channel>
 <channel id="TÜRK HALK MÜZİĞİ"><display-name>TÜRK HALK MÜZİĞİ</display-name></channel>
 <channel id="TÜRK SANAT MÜZİĞİ"><display-name>TÜRK SANAT MÜZİĞİ</display-name></channel>
-<channel id="TÜRKÇE POP"><display-name>TÜRKÇE POP</display-name></channel>
 <channel id="TÜRKÇE SLOW"><display-name>TÜRKÇE SLOW</display-name></channel>
-<channel id="TV 100"><display-name>TV 100</display-name></channel>
-<channel id="ULUSAL 1"><display-name>ULUSAL 1</display-name></channel>
-<channel id="VIASAT HISTORY"><display-name>VIASAT HISTORY</display-name></channel>
 <channel id="YABANCI POP"><display-name>YABANCI POP</display-name></channel>
 <channel id="YABANCI ROCK"><display-name>YABANCI ROCK</display-name></channel>
 <channel id="YABANCI SLOW"><display-name>YABANCI SLOW</display-name></channel>
@@ -41730,7 +41650,11 @@
 <programme start="20261024210000 +0000" stop="20261026000000 +0000" channel="YABANCI SLOW"><title>Slow Akşamlar</title><desc>Eğlence/generalAudience</desc></programme>
 <programme start="20261026000000 +0000" stop="20261026030000 +0000" channel="YABANCI SLOW"><title>Romantik Geceler</title><desc>Eğlence/generalAudience</desc></programme>
 <programme start="20261026030000 +0000" stop="20261026060000 +0000" channel="YABANCI SLOW"><title>Slow Geceler</title><desc>Eğlence/generalAudience</desc></programme>
-<channel id="SİNEMA.TV.HD">
+<channel id="KABLO.INFO">
+    <display-name lang="tr">KABLO INFO</display-name>
+    <url>http://www.turksatkablo.com.tr</url>
+  </channel>
+  <channel id="SİNEMA.TV.HD">
     <display-name lang="tr">SİNEMA TV HD</display-name>
     <url>http://www.turksatkablo.com.tr</url>
   </channel>
@@ -42098,10 +42022,6 @@
     <display-name lang="tr">NHK WORLD</display-name>
     <url>http://www.turksatkablo.com.tr</url>
   </channel>
-  <channel id="ARIRANG">
-    <display-name lang="tr">ARIRANG</display-name>
-    <url>http://www.turksatkablo.com.tr</url>
-  </channel>
   <channel id="TRT.SPOR.HD">
     <display-name lang="tr">TRT SPOR HD</display-name>
     <url>http://www.turksatkablo.com.tr</url>
@@ -42350,10 +42270,6 @@
     <display-name lang="tr">BLOOMBERG TV</display-name>
     <url>http://www.turksatkablo.com.tr</url>
   </channel>
-  <channel id="TEVE2">
-    <display-name lang="tr">TEVE2</display-name>
-    <url>http://www.turksatkablo.com.tr</url>
-  </channel>
   <channel id="24.TV.HD">
     <display-name lang="tr">24 TV HD</display-name>
     <url>http://www.turksatkablo.com.tr</url>
@@ -42404,6 +42320,51 @@
     <icon src="https://ssport.tv//uploads/tv-logo/logo-2.svg" />
     <url>http://www.ssport.tv</url>
   </channel>
+  <programme start="20261024060000 +0300" stop="20261024100000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261024100000 +0300" stop="20261024140000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261024140000 +0300" stop="20261024180000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261024180000 +0300" stop="20261024220000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261024220000 +0300" stop="20261025060000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261025060000 +0300" stop="20261025100000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261025100000 +0300" stop="20261025140000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261025140000 +0300" stop="20261025180000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261025180000 +0300" stop="20261025220000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261025220000 +0300" stop="20261026060000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261026060000 +0300" stop="20261026100000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261026100000 +0300" stop="20261026140000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261026140000 +0300" stop="20261026180000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261026180000 +0300" stop="20261026220000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
+  <programme start="20261026220000 +0300" stop="20261027060000 +0300" channel="KABLO.INFO">
+    <title lang="tr">KABLO İnfo</title>
+  </programme>
   <programme start="20261024003000 +0300" stop="20261024023000 +0300" channel="SİNEMA.TV.HD">
     <title lang="tr">Uzaydan Gelen Renk</title>
   </programme>
@@ -88054,22 +88015,10 @@
     <icon src="https://izmottvsc24.tvplus.com.tr:33207/CPS/images/universal/film/logo/202305/20230531/9/20230531210421948ac2_op.png" />
     <url>http://www.tvplus.com.tr</url>
   </channel>
-  <channel id="CNN.International">
-    <display-name lang="tr">CNN International</display-name>
-    <icon src="https://izmottvsc24.tvplus.com.tr:33207/CPS/images/universal/film/logo/202410/20241030/49/1918350856955eb9b42e_op.png" />
-    <icon src="https://izmottvsc24.tvplus.com.tr:33207/CPS/images/universal/film/logo/202410/20241030/49/1918350856955eb9b42e_op.png" />
-    <url>http://www.tvplus.com.tr</url>
-  </channel>
   <channel id="BBC.News">
     <display-name lang="tr">BBC News</display-name>
     <icon src="https://izmottvsc24.tvplus.com.tr:33207/CPS/images/universal/film/logo/202411/20241127/89/1907261743735eb8f42a_op.png" />
     <icon src="https://izmottvsc24.tvplus.com.tr:33207/CPS/images/universal/film/logo/202411/20241127/89/1907261743735eb8f42a_op.png" />
-    <url>http://www.tvplus.com.tr</url>
-  </channel>
-  <channel id="TRT.World.HD">
-    <display-name lang="tr">TRT World HD</display-name>
-    <icon src="https://izmottvsc24.tvplus.com.tr:33207/CPS/images/universal/film/logo/202002/20200204/20200204000041006rlv_op.png" />
-    <icon src="https://izmottvsc24.tvplus.com.tr:33207/CPS/images/universal/film/logo/202002/20200204/20200204000041006rlv_op.png" />
     <url>http://www.tvplus.com.tr</url>
   </channel>
   <channel id="AL.JAZEERA.ENGLISH">
@@ -88364,12 +88313,6 @@
     <icon src="https://itv224186.tmp.tivibu.com.tr:6430/images/poster/20250801837546.png" />
     <url>http://www.tivibu.com.tr</url>
   </channel>
-  <channel id="CNBC-e">
-    <display-name lang="tr">CNBC-e</display-name>
-    <icon src="https://itv224186.tmp.tivibu.com.tr:6430/images/poster/20260323095389.png" />
-    <icon src="https://itv224186.tmp.tivibu.com.tr:6430/images/poster/20260323095389.png" />
-    <url>http://www.tivibu.com.tr</url>
-  </channel>
   <channel id="HABER.GLOBAL">
     <display-name lang="tr">HABER GLOBAL</display-name>
     <url>http://www.tivibu.com.tr</url>
@@ -88516,12 +88459,6 @@
     <icon src="https://itv224186.tmp.tivibu.com.tr:6430/images/poster/20250801839115.png" />
     <url>http://www.tivibu.com.tr</url>
   </channel>
-  <channel id="NICK.JR">
-    <display-name lang="tr">NICK JR</display-name>
-    <icon src="https://itv224186.tmp.tivibu.com.tr:6430/images/poster/20250801838614.png" />
-    <icon src="https://itv224186.tmp.tivibu.com.tr:6430/images/poster/20250801838614.png" />
-    <url>http://www.tivibu.com.tr</url>
-  </channel>
   <channel id="DA.VINCI">
     <display-name lang="tr">DA VINCI</display-name>
     <url>http://www.tivibu.com.tr</url>
@@ -88582,12 +88519,6 @@
     <display-name lang="tr">TRT WORLD</display-name>
     <icon src="https://itv224186.tmp.tivibu.com.tr:6430/images/poster/20250801839162.png" />
     <icon src="https://itv224186.tmp.tivibu.com.tr:6430/images/poster/20250801839162.png" />
-    <url>http://www.tivibu.com.tr</url>
-  </channel>
-  <channel id="BBC.NEWS">
-    <display-name lang="tr">BBC NEWS</display-name>
-    <icon src="https://itv224186.tmp.tivibu.com.tr:6430/images/poster/20250801838547.png" />
-    <icon src="https://itv224186.tmp.tivibu.com.tr:6430/images/poster/20250801838547.png" />
     <url>http://www.tivibu.com.tr</url>
   </channel>
   <channel id="NHK.WORLD-JAPAN">
@@ -88700,28 +88631,8 @@
     <icon src="https://itv224186.tmp.tivibu.com.tr:6430/images/poster/20250722831263.png" />
     <url>http://www.tivibu.com.tr</url>
   </channel>
-  <channel id="Eurosport.1">
-    <display-name lang="tr">Eurosport 1</display-name>
-    <url>http://www.turksatkablo.com.tr</url>
-  </channel>
-  <channel id="Eurosport.2">
-    <display-name lang="tr">Eurosport 2</display-name>
-    <url>http://www.turksatkablo.com.tr</url>
-  </channel>
   <channel id="W-Sport">
     <display-name lang="tr">W-Sport</display-name>
-    <url>http://www.turksatkablo.com.tr</url>
-  </channel>
-  <channel id="A.Spor">
-    <display-name lang="tr">A Spor</display-name>
-    <url>http://www.turksatkablo.com.tr</url>
-  </channel>
-  <channel id="TRT.Spor">
-    <display-name lang="tr">TRT Spor</display-name>
-    <url>http://www.turksatkablo.com.tr</url>
-  </channel>
-  <channel id="HT.Spor">
-    <display-name lang="tr">HT Spor</display-name>
     <url>http://www.turksatkablo.com.tr</url>
   </channel>
   <programme start="20261024000000 +0000" stop="20261024030000 +0000" channel="TV+.Info">
@@ -330215,4 +330126,4 @@
   <programme start="20261026204000 +0300" stop="20261027004500 +0300" channel="CosmoSports">
     <title lang="tr">Kralların Kralı Kahramanlar Serisi</title>
   </programme>
-<channel id="beIN Sports 5"><display-name>beIN Sports 5</display-name></channel><channel id="beIN Sports Max 1"><display-name>beIN Sports Max 1</display-name></channel><channel id="beIN Sports Max 2"><display-name>beIN Sports Max 2</display-name></channel><channel id="D-Smart Spor"><display-name>D-Smart Spor</display-name></channel><channel id="D-Smart Go"><display-name>D-Smart Go</display-name></channel><channel id="Smart Çocuk"><display-name>Smart Çocuk</display-name></channel><channel id="D-Smart Sinema"><display-name>D-Smart Sinema</display-name></channel><channel id="Tivibu Spor"><display-name>Tivibu Spor</display-name></channel><channel id="Tivibu Spor 1"><display-name>Tivibu Spor 1</display-name></channel><channel id="Tivibu Spor 2"><display-name>Tivibu Spor 2</display-name></channel><channel id="Tivibu Spor 3"><display-name>Tivibu Spor 3</display-name></channel><channel id="Tivibu Spor 4"><display-name>Tivibu Spor 4</display-name></channel><programme channel="Agro TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Agro TV</title></programme><programme channel="Akit TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Akit TV</title></programme><programme channel="Baby TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Baby TV</title></programme><programme channel="Bengütürk TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Bengütürk TV</title></programme><programme channel="Bİ Kanal" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Bİ Kanal</title></programme><programme channel="Bir Tv" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Bir Tv</title></programme><programme channel="Cartoonito" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Cartoonito</title></programme><programme channel="Çocuk Smart" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Çocuk Smart</title></programme><programme channel="Da Vinci Learning" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Da Vinci Learning</title></programme><programme channel="Diyanet Tv" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Diyanet Tv</title></programme><programme channel="Dizi Smart Premium" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Dizi Smart Premium</title></programme><programme channel="Dream TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Dream TV</title></programme><programme channel="Es TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Es TV</title></programme><programme channel="Euro Star" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Euro Star</title></programme><programme channel="Fashion TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Fashion TV</title></programme><programme channel="Gamescreen" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Gamescreen</title></programme><programme channel="History Channel" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">History Channel</title></programme><programme channel="Kanal 26" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Kanal 26</title></programme><programme channel="Kanal 3" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Kanal 3</title></programme><programme channel="Kanal Fırat" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Kanal Fırat</title></programme><programme channel="Kanal V" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Kanal V</title></programme><programme channel="Kardelen TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Kardelen TV</title></programme><programme channel="Köy TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Köy TV</title></programme><programme channel="Lider Haber Tv" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Lider Haber Tv</title></programme><programme channel="Line TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Line TV</title></programme><programme channel="Luys TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Luys TV</title></programme><programme channel="Minika GO" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Minika GO</title></programme><programme channel="MK TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">MK TV</title></programme><programme channel="Moonbug" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Moonbug</title></programme><programme channel="NBA TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">NBA TV</title></programme><programme channel="On4 TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">On4 TV</title></programme><programme channel="ONS TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">ONS TV</title></programme><programme channel="RTR Planeta" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">RTR Planeta</title></programme><programme channel="Rumeli TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Rumeli TV</title></programme><programme channel="Russia-24" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Russia-24</title></programme><programme channel="Saudi Quran TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Saudi Quran TV</title></programme><programme channel="Saudi Sunnah TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Saudi Sunnah TV</title></programme><programme channel="ShowMax" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">ShowMax</title></programme><programme channel="Sıfır TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Sıfır TV</title></programme><programme channel="Spacetoon" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Spacetoon</title></programme><programme channel="Szc Tv" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Szc Tv</title></programme><programme channel="TAY TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">TAY TV</title></programme><programme channel="Tek Rumeli Tv" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Tek Rumeli Tv</title></programme><programme channel="Tele 1" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Tele 1</title></programme><programme channel="Tempo TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Tempo TV</title></programme><programme channel="TGRT Belgesel" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">TGRT Belgesel</title></programme><programme channel="TGRT EU" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">TGRT EU</title></programme><programme channel="trt 2" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">trt 2</title></programme><programme channel="TRT 3 Spor" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">TRT 3 Spor</title></programme><programme channel="Türkçe POP" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Türkçe POP</title></programme><programme channel="Turkish Silk" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Turkish Silk</title></programme><programme channel="TV 264" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">TV 264</title></programme><programme channel="TV 35" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">TV 35</title></programme><programme channel="Tv 5" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Tv 5</title></programme><programme channel="Ulusal TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Ulusal TV</title></programme><programme channel="Yıldız En TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Yıldız En TV</title></programme><programme channel="BluTV Play 1" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">BluTV Play 1</title></programme><programme channel="BluTV Play 2" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">BluTV Play 2</title></programme><programme channel="NBA TV HD" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">NBA TV HD</title></programme><programme channel="ŞÖMİNE PLUS" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">ŞÖMİNE PLUS</title></programme><programme channel="TV 2020" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">TV 2020</title></programme><programme channel="W Sport" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">W Sport</title></programme><programme channel="BENİM KANALIM" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">BENİM KANALIM</title></programme><programme channel="TRT.3.-..SPOR" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">TRT 3 -  SPOR</title></programme><programme channel="BBC.WORLD.NEWS" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">BBC WORLD NEWS</title></programme><programme channel="DEUTSCHE.WELLE.(DE)" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">DEUTSCHE WELLE (DE)</title></programme><programme channel="NAT.GEO.PEOPLE.HD" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">NAT GEO PEOPLE HD</title></programme><programme channel="ANIMAL.PLANET.HD" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">ANIMAL PLANET HD</title></programme><programme channel="DISCOVERY.SCIENCE.HD" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">DISCOVERY SCIENCE HD</title></programme><programme channel="SCIENCE.&amp;.VIE.HD" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">SCIENCE &amp; VIE HD</title></programme><programme channel="ANIMAUX" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">ANIMAUX</title></programme><programme channel="RTG.INT" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">RTG INT</title></programme><programme channel="CHASSE.ET.PECHE" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">CHASSE ET PECHE</title></programme><programme channel="BBC.ENTERTAINMENT" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">BBC ENTERTAINMENT</title></programme><programme channel="AUTOMOTO.HD" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">AUTOMOTO HD</title></programme><programme channel="beIN.SPORTS.1" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">beIN SPORTS 1</title></programme><programme channel="beIN.SPORTS.2" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">beIN SPORTS 2</title></programme><programme channel="beIN.SPORTS.3" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">beIN SPORTS 3</title></programme><programme channel="beIN.SPORTS.4" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">beIN SPORTS 4</title></programme><programme channel="beIN.SPORTS.MAX.1" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">beIN SPORTS MAX 1</title></programme><programme channel="beIN.SPORTS.MAX.2" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">beIN SPORTS MAX 2</title></programme><programme channel="FOX.CRIME.HD" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">FOX CRIME HD</title></programme><programme channel="FILMBOX.ARTHOUSE" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">FILMBOX ARTHOUSE</title></programme><programme channel="FUNBOX.UHD.4K" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">FUNBOX UHD 4K</title></programme><programme channel="GAMETOON.HD" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">GAMETOON HD</title></programme><programme channel="DREAM.TV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">DREAM TV</title></programme><programme channel="360.TUNE.BOX" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">360 TUNE BOX</title></programme><programme channel="LINETV" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">LINETV</title></programme><programme channel="BRT.1" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">BRT 1</title></programme><programme channel="TEVE2" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">TEVE2</title></programme><programme channel="EPIC.DRAMA" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">EPIC DRAMA</title></programme><programme channel="BluTV.Play.1" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">BluTV Play 1</title></programme><programme channel="BluTV.Play.2" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">BluTV Play 2</title></programme><programme channel="Ekol.Sports" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Ekol Sports</title></programme><programme channel="ŞÖMİNE.PLUS" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">ŞÖMİNE PLUS</title></programme><programme channel="BENİM.KANALIM" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">BENİM KANALIM</title></programme><programme channel="beIN Sports 5" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">beIN Sports 5</title></programme><programme channel="beIN Sports Max 1" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">beIN Sports Max 1</title></programme><programme channel="beIN Sports Max 2" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">beIN Sports Max 2</title></programme><programme channel="D-Smart Spor" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">D-Smart Spor</title></programme><programme channel="D-Smart Go" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">D-Smart Go</title></programme><programme channel="Smart Çocuk" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Smart Çocuk</title></programme><programme channel="D-Smart Sinema" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">D-Smart Sinema</title></programme><programme channel="Tivibu Spor" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Tivibu Spor</title></programme><programme channel="Tivibu Spor 1" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Tivibu Spor 1</title></programme><programme channel="Tivibu Spor 2" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Tivibu Spor 2</title></programme><programme channel="Tivibu Spor 3" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Tivibu Spor 3</title></programme><programme channel="Tivibu Spor 4" start="20261024212802 +0000" stop="20261025212802 +0000"><title lang="tr">Tivibu Spor 4</title></programme></tv>
+<channel id="D-Smart Spor"><display-name>D-Smart Spor</display-name></channel><programme channel="D-Smart Spor" start="20261024213318 +0000" stop="20261025213318 +0000"><title lang="tr">D-Smart Spor</title></programme><channel id="Smart Çocuk"><display-name>Smart Çocuk</display-name></channel><programme channel="Smart Çocuk" start="20261024213318 +0000" stop="20261025213318 +0000"><title lang="tr">Smart Çocuk</title></programme><channel id="Tivibu Spor"><display-name>Tivibu Spor</display-name></channel><programme channel="Tivibu Spor" start="20261024213318 +0000" stop="20261025213318 +0000"><title lang="tr">Tivibu Spor</title></programme><channel id="Tivibu Spor 1"><display-name>Tivibu Spor 1</display-name></channel><programme channel="Tivibu Spor 1" start="20261024213318 +0000" stop="20261025213318 +0000"><title lang="tr">Tivibu Spor 1</title></programme><channel id="Tivibu Spor 2"><display-name>Tivibu Spor 2</display-name></channel><programme channel="Tivibu Spor 2" start="20261024213318 +0000" stop="20261025213318 +0000"><title lang="tr">Tivibu Spor 2</title></programme><channel id="Tivibu Spor 3"><display-name>Tivibu Spor 3</display-name></channel><programme channel="Tivibu Spor 3" start="20261024213318 +0000" stop="20261025213318 +0000"><title lang="tr">Tivibu Spor 3</title></programme><channel id="Tivibu Spor 4"><display-name>Tivibu Spor 4</display-name></channel><programme channel="Tivibu Spor 4" start="20261024213318 +0000" stop="20261025213318 +0000"><title lang="tr">Tivibu Spor 4</title></programme></tv>
