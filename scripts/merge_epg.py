@@ -62,7 +62,10 @@ for url in SOURCES:
         print(f"{url} hata: {e}")
 
 # MANUEL OLARAK BEIN 5 ve D-SMART kanalları yoksa ekle
-MANUEL_KANALLAR = ["beIN Sports 5", "beIN Sports Max 1", "beIN Sports Max 2", "D-Smart Spor", "D-Smart Go", "Smart Çocuk", "D-Smart Sinema"]
+MANUEL_KANALLAR = ["beIN Sports 5", "beIN Sports Max 1", "beIN Sports Max 2", "D-Smart Spor", "D-Smart Go", "Smart Çocuk", "D-Smart Sinema", "Tivibu Spor", "Tivibu Spor 1", "Tivibu Spor 2", "Tivibu Spor 3", "Tivibu Spor 4"]
+
+
+
 for mk in MANUEL_KANALLAR:
     if mk not in channels:
         ch = ET.Element('channel', {'id': mk})
