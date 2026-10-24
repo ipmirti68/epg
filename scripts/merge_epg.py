@@ -11,34 +11,36 @@ SOURCES = [
 ]
 
 tv = ET.Element('tv')
-seen_channels = set()
-count_prog = 0
+seen = set()
+prog_count = 0
 
 for url in SOURCES:
     try:
-        print(f"-> {url}")
-        r = requests.get(url, timeout=90, headers={"User-Agent": "Mozilla/5.0"})
-        data = r.content
+        data = requests.get(url, timeout=90, headers={"User-Agent": "Mozilla/5.0"}).content
         if url.endswith('.gz'):
             data = gzip.decompress(data)
-        
         root = ET.fromstring(data)
-        
         for ch in root.findall('channel'):
             cid = ch.get('id')
-            if cid not in seen_channels:
-                seen_channels.add(cid)
+            if "KABLO" in cid.upper(): # KABLO'yu komple atla
+                continue
+            if cid not in seen:
+                seen.add(cid)
                 tv.append(ch)
-        
-        for prog in root.findall('programme'):
-            title = prog.find('title')
-            # Boş title'ları alma - senin hatan buydu
-            if title is not None and title.text and title.text.strip() != "" and title.text.strip() != "KABLO Info":
-                tv.append(prog)
-                count_prog += 1
-                
+        for p in root.findall('programme'):
+            cid = p.get('channel','')
+            if "KABLO" in cid.upper():
+                continue
+            title = p.find('title')
+            if title is None or not title.text:
+                continue
+            txt = title.text.strip()
+            if txt == "" or txt.lower() == "kablo info":
+                continue
+            tv.append(p)
+            prog_count += 1
     except Exception as e:
-        print(f"HATA {url}: {e}")
+        print(f"Hata {url}: {e}")
 
 ET.ElementTree(tv).write('epg.xml', encoding='utf-8', xml_declaration=True)
-print(f"BİTTİ -> Kanallar: {len(seen_channels)} Programlar: {count_prog}")
+print(f"TEMIZ EPG -> Kanallar: {len(seen)} Programlar: {prog_count}")
