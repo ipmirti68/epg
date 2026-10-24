@@ -15,6 +15,7 @@ concurrency:
 
 jobs:
   merge:
+    name: EPG kaynaklarını birleştir
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -22,15 +23,22 @@ jobs:
       - name: Depoyu indir
         uses: actions/checkout@v4
 
-      - name: Python kur
+      - name: Python 3.12 kur
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
+      - name: Python sürümünü kontrol et
+        run: python --version
+
       - name: EPG kaynaklarını birleştir
         run: python scripts/merge_epg.py
 
-      - name: XMLTV dosyasını kaydet
+      - name: XMLTV dosyasını doğrula
+        run: |
+          python -c "import xml.etree.ElementTree as ET; r=ET.parse('epg.xml').getroot(); assert r.tag == 'tv', 'XMLTV kökü tv değil'; print('Kanal:', len(r.findall('channel'))); print('Program:', len(r.findall('programme'))); assert len(r.findall('programme')) > 0, 'Program bulunamadı'"
+
+      - name: Değişiklikleri kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -38,5 +46,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Günlük Türkiye EPG güncellemesi"
             git push
+          else
+            echo "EPG değişmedi; yeni commit gerekmiyor."
           fi
           
