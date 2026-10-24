@@ -1,5 +1,4 @@
-
-name: Türkiye EPG Günlük Birleştirme
+name: Turkiye EPG
 
 on:
   workflow_dispatch:
@@ -9,13 +8,8 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: turkiye-epg
-  cancel-in-progress: false
-
 jobs:
   merge:
-    name: EPG kaynaklarını birleştir
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -23,30 +17,26 @@ jobs:
       - name: Depoyu indir
         uses: actions/checkout@v4
 
-      - name: Python 3.12 kur
+      - name: Python kur
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Python sürümünü kontrol et
-        run: python --version
-
-      - name: EPG kaynaklarını birleştir
+      - name: EPG birlestir
         run: python scripts/merge_epg.py
 
-      - name: XMLTV dosyasını doğrula
+      - name: XMLTV kontrol
         run: |
-          python -c "import xml.etree.ElementTree as ET; r=ET.parse('epg.xml').getroot(); assert r.tag == 'tv', 'XMLTV kökü tv değil'; print('Kanal:', len(r.findall('channel'))); print('Program:', len(r.findall('programme'))); assert len(r.findall('programme')) > 0, 'Program bulunamadı'"
+          python -c "import xml.etree.ElementTree as ET; r=ET.parse('epg.xml').getroot(); print('Kanallar:',len(r.findall('channel'))); print('Programlar:',len(r.findall('programme'))); assert r.tag == 'tv' and len(r.findall('programme')) > 0"
 
-      - name: Değişiklikleri kaydet
+      - name: EPG kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add epg.xml
           if ! git diff --cached --quiet; then
-            git commit -m "Günlük Türkiye EPG güncellemesi"
+            git commit -m "Turkiye EPG guncellemesi"
             git push
           else
-            echo "EPG değişmedi; yeni commit gerekmiyor."
+            echo "Yeni degisiklik yok"
           fi
-          
