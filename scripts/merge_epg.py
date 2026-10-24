@@ -5,6 +5,10 @@ SOURCES = [
     "https://www.open-epg.com/files/turkey4.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_TR1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_TR3.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_TR2.xml.gz",
+    "https://iptv-epg.org/epg/tr.xml.gz",
+    "https://raw.githubusercontent.com/iptv-org/epg/master/sites/tvplus.com.tr/tvplus.com.tr.xml.gz",
+
 ]
 
 tv = ET.Element('tv')
