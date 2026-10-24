@@ -1,9 +1,9 @@
 import requests, gzip, xml.etree.ElementTree as ET
 
 SOURCES = [
-    "https://www.open-epg.com/files/turkey4.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_TR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_TR3.xml.gz",
+    "https://www.open-epg.com/files/turkey4.xml",
+    "https://epgshare01.online/epgshare01/epg_ripper_TR1.xml",
+    "https://epgshare01.online/epgshare01/epg_ripper_TR3.xml",
 ]
 
 tv = ET.Element('tv')
