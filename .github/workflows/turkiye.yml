@@ -1,12 +1,10 @@
 name: Turkiye EPG
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
   schedule:
-    - cron: "30 22 * * *"
-permissions:
-  contents: write
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,19 +12,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
       - run: pip install requests
       - run: python scripts/merge_epg.py
-      - name: KABLO'yu zorla sil
-        run: |
-          sed -i '/KABLO.INFO/d' epg.xml
-          sed -i '/KABLO Info/d' epg.xml
-          sed -i '/KABLO/d' epg.xml
-          echo "KABLO silindi, kalan boyut:"
-          ls -lh epg.xml
       - run: |
           git config user.name "bot"
           git config user.email "bot@bot.com"
           git add epg.xml
-          git commit -m "kablo temiz" || echo "degisiklik yok"
+          git commit -m "epg update" || echo "no changes"
           git push
