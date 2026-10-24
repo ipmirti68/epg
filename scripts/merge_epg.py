@@ -16,6 +16,9 @@ SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_TR5.xml.gz",
 ]
 
+# 3 SAAT GERİ AL - TÜRKİYE İÇİN DÜZELTME
+SHIFT_HOURS = -3
+
 tv = ET.Element('tv')
 channels = {}
 
@@ -31,6 +34,18 @@ def clean_name(name):
     if name.lower().endswith(".tr"):
         name = name[:-3].strip()
     return name
+
+def shift_time(timestr):
+    # Format: 20241025033000 +0300 veya 20241025033000 +0000
+    try:
+        if len(timestr) < 14: return timestr
+        dt_part = timestr[:14]
+        tz_part = timestr[15:] if len(timestr) > 14 else "+0300"
+        dt = datetime.strptime(dt_part, "%Y%m%d%H%M%S")
+        dt = dt + timedelta(hours=SHIFT_HOURS)
+        return dt.strftime("%Y%m%d%H%M%S") + f" {tz_part}"
+    except:
+        return timestr
 
 for url in SOURCES:
     try:
@@ -52,26 +67,14 @@ for url in SOURCES:
         for pr in root.findall('programme'):
             nid = normalize_id(pr.get('channel',''))
             if not nid: continue
+            # ZAMANI DÜZELT
+            if pr.get('start'): pr.set('start', shift_time(pr.get('start')))
+            if pr.get('stop'): pr.set('stop', shift_time(pr.get('stop')))
             pr.set('channel', nid)
             tv.append(pr)
     except Exception as e:
         print(f"{url} hata: {e}")
 
-# Eksik meşhur kanalları garanti ekle
-MANUEL = ["Beyaz TV", "beIN Sports 5", "beIN Sports Max 1", "beIN Sports Max 2", "D-Smart Spor", "Smart Çocuk", "Tivibu Spor", "Tivibu Spor 1", "Tivibu Spor 2", "Tivibu Spor 3", "Tivibu Spor 4"]
-for mk in MANUEL:
-    if mk.lower() not in [k.lower() for k in channels]:
-        ch = ET.Element('channel', {'id': mk})
-        ET.SubElement(ch, 'display-name').text = mk
-        tv.append(ch)
-        channels[mk]=mk
-        # Sahte program ekle ki listede gözüksün
-        now = datetime.utcnow()
-        s = now.strftime("%Y%m%d%H%M%S +0000")
-        e = (now + timedelta(hours=24)).strftime("%Y%m%d%H%M%S +0000")
-        prog = ET.Element('programme', {'channel': mk, 'start': s, 'stop': e})
-        ET.SubElement(prog, 'title', {'lang': 'tr'}).text = mk
-        tv.append(prog)
+print(f"TOPLAM KANAL: {len(channels)}")
 
 ET.ElementTree(tv).write('epg.xml', encoding='utf-8', xml_declaration=True)
-print(f"TOPLAM KANAL: {len(channels)}")
