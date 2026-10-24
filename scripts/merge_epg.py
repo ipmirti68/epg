@@ -1,46 +1,31 @@
-import requests, gzip, xml.etree.ElementTree as ET
+name: Turkiye EPG
 
-SOURCES = [
-    "https://www.open-epg.com/files/turkey1.xml.gz",
-    "https://www.open-epg.com/files/turkey2.xml.gz",
-    "https://www.open-epg.com/files/turkey3.xml.gz",
-    "https://www.open-epg.com/files/turkey4.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_TR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_TR3.xml.gz",
-    "https://raw.githubusercontent.com/ahmethascelik/epghost/main/xmltv.xml",
-]
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "30 22 * * *"
 
-tv = ET.Element('tv')
-seen = set()
-prog_count = 0
+permissions:
+  contents: write
 
-for url in SOURCES:
-    try:
-        data = requests.get(url, timeout=90, headers={"User-Agent": "Mozilla/5.0"}).content
-        if url.endswith('.gz'):
-            data = gzip.decompress(data)
-        root = ET.fromstring(data)
-        for ch in root.findall('channel'):
-            cid = ch.get('id')
-            if "KABLO" in cid.upper(): # KABLO'yu komple atla
-                continue
-            if cid not in seen:
-                seen.add(cid)
-                tv.append(ch)
-        for p in root.findall('programme'):
-            cid = p.get('channel','')
-            if "KABLO" in cid.upper():
-                continue
-            title = p.find('title')
-            if title is None or not title.text:
-                continue
-            txt = title.text.strip()
-            if txt == "" or txt.lower() == "kablo info":
-                continue
-            tv.append(p)
-            prog_count += 1
-    except Exception as e:
-        print(f"Hata {url}: {e}")
-
-ET.ElementTree(tv).write('epg.xml', encoding='utf-8', xml_declaration=True)
-print(f"TEMIZ EPG -> Kanallar: {len(seen)} Programlar: {prog_count}")
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: pip install requests
+      - name: Merge EPG
+        run: python scripts/merge_epg.py
+      - name: Push
+        run: |
+          git config user.name "bot"
+          git config user.email "bot@bot.com"
+          git add epg.xml
+          git commit -m "epg temizlendi" || echo "yok"
+          git push
