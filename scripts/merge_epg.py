@@ -12,81 +12,103 @@ SOURCES = [
 ]
 
 def norm(cid):
-    if not cid: return None
+    if not cid:
+        return None
     cid = cid.strip()
-    if cid.lower().endswith(".tr"): cid = cid[:-3]
+    if cid.lower().endswith(".tr"):
+        cid = cid[:-3]
     return cid.split("@")[0].strip()
 
 def fix_time(timestr):
+    # 3 saat kayma sorunu için: saati kaydırmadan sadece +0300 yap
+    # 080500 +0000 -> 080500 +0300 (aynen kalsın)
     try:
-        if len(timestr) < 14: return timestr
+        if len(timestr) < 14:
+            return timestr
         dt_part = timestr[:14]
-        tz_part = timestr[15:].strip() if len(timestr) > 15 else "+0000"
-        dt = datetime.strptime(dt_part, "%Y%m%d%H%M%S")
-        sign = 1 if tz_part[0] == '+' else -1
-        th = int(tz_part[1:3])
-        tm = int(tz_part[3:5]) if len(tz_part) >= 5 else 0
-        src_tz = timezone(timedelta(hours=sign*th, minutes=sign*tm))
-        dt = dt.replace(tzinfo=src_tz)
-        tr_tz = timezone(timedelta(hours=3))
-        dt_tr = dt.astimezone(tr_tz)
-        return dt_tr.strftime("%Y%m%d%H%M%S +0300")
+        return f"{dt_part} +0300"
     except:
         return timestr
 
 tv = ET.Element('tv')
-channels_dict = {}  # id -> channel element
+channels_dict = {}
 has_epg = set()
+BAD_TITLES = ["veri yok", "no information", "no info", "epg mevcut değil", ""]
 
+# 1. Tüm kaynakları çek
 for url in SOURCES:
     try:
         r = requests.get(url, timeout=60, headers={"User-Agent":"Mozilla/5.0"})
-        if r.status_code != 200: continue
+        if r.status_code != 200:
+            print(f"404 {url}")
+            continue
         data = r.content
         if url.endswith('.gz'):
-            try: data = gzip.decompress(data)
-            except: pass
+            try:
+                data = gzip.decompress(data)
+            except:
+                pass
         root = ET.fromstring(data)
         for ch in root.findall('channel'):
             nid = norm(ch.get('id',''))
-            if not nid: continue
-            if nid.lower() not in channels_dict:
+            if not nid:
+                continue
+            low = nid.lower()
+            if low not in channels_dict:
                 ch.set('id', nid)
-                channels_dict[nid.lower()] = ch
+                channels_dict[low] = ch
+
         for pr in root.findall('programme'):
             nid = norm(pr.get('channel',''))
-            if not nid: continue
-            if pr.get('start'): pr.set('start', fix_time(pr.get('start')))
-            if pr.get('stop'): pr.set('stop', fix_time(pr.get('stop')))
+            if not nid:
+                continue
+            low = nid.lower()
+            # Saatleri düzelt (kaydırmadan)
+            if pr.get('start'):
+                pr.set('start', fix_time(pr.get('start')))
+            if pr.get('stop'):
+                pr.set('stop', fix_time(pr.get('stop')))
+            
+            # "Veri yok" ise başlığı kanal ismi yap
+            title_elem = pr.find('title')
+            if title_elem is not None and title_elem.text:
+                if title_elem.text.strip().lower() in BAD_TITLES:
+                    ch_obj = channels_dict.get(low)
+                    if ch_obj is not None:
+                        dn = ch_obj.find('display-name')
+                        title_elem.text = dn.text if dn is not None and dn.text else nid
+                    else:
+                        title_elem.text = nid
+            
             pr.set('channel', nid)
             tv.append(pr)
-            has_epg.add(nid.lower())
+            has_epg.add(low)
+
     except Exception as e:
         print(f"HATA {url}: {e}")
 
-# Kanalları ekle
+# 2. Kanalları ekle
 for ch in channels_dict.values():
     tv.append(ch)
 
-# EPG'si OLMAYAN kanala kanal ismini yaz
+# 3. Hiç EPG'si olmayan kanala kanal ismini yaz (24 saatlik)
 now = datetime.now(timezone(timedelta(hours=3)))
 start_str = now.strftime("%Y%m%d%H%M%S +0300")
 stop_str = (now + timedelta(days=1)).strftime("%Y%m%d%H%M%S +0300")
 
-count_fallback = 0
-for cid_low, ch in channels_dict.items():
-    if cid_low not in has_epg:
-        # display-name al
+fallback_count = 0
+for low, ch in channels_dict.items():
+    if low not in has_epg:
         dn = ch.find('display-name')
         name = dn.text if dn is not None and dn.text else ch.get('id')
         prog = ET.Element('programme', {'channel': ch.get('id'), 'start': start_str, 'stop': stop_str})
         title = ET.SubElement(prog, 'title', {'lang': 'tr'})
-        title.text = name  # EPG yoksa kanal ismi yazıyor
+        title.text = name
         desc = ET.SubElement(prog, 'desc', {'lang': 'tr'})
         desc.text = f"{name} yayını"
         tv.append(prog)
-        count_fallback += 1
+        fallback_count += 1
 
-print(f"Toplam {len(channels_dict)} kanal, {count_fallback} tanesine kanal ismi yazıldı (EPG yoktu)")
+print(f"TOPLAM: {len(channels_dict)} kanal, {fallback_count} tanesine fallback yazıldı")
 
 ET.ElementTree(tv).write('epg.xml', encoding='utf-8', xml_declaration=True)
