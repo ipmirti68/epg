@@ -8,7 +8,16 @@ SOURCES = [
     "https://www.open-epg.com/files/turkey1.xml.gz",
     "https://www.open-epg.com/files/turkey2.xml.gz",
     "https://www.open-epg.com/files/turkey3.xml.gz",
-    "https://www.open-epg.com/files/turkey4.xml.gz",
+]
+
+# SENIN RESIMDEKI + TURKIYE GENELI RADYOLAR - BURAYA KENDI RADYO ID'LERINI EKLEYEBILIRSIN
+EXTRA_RADIOS = [
+    "AKSARAY NIN SESI 95.1", "AKSARAY FM 99.5", "AKSARAY RADYO 68", "MAVI RADYO", "MAVI RADYO (copy)",
+    "TURKULERLE TURKIYE", "RADYO TURKU", "TRT TURKU", "RADYO 7 TURKU", 
+    "RADYO 7 MUHTESEM 4", "RADYO 7 NOSTALJI", "RADYO ANKARA",
+    "KRAL FM", "KRAL POP", "POWER FM", "POWER TURK", "JOY FM", "JOY TURK",
+    "METRO FM", "SUPER FM", "SHOW RADYO", "NUMBER ONE FM", "RADYO D", "RADYO VIVA",
+    "BEST FM", "ALEM FM", "TRT FM", "TRT RADYO 1", "RADYO 7", "AKSARAYIN SESI",
 ]
 
 def clean_id(cid):
@@ -24,13 +33,7 @@ def fix_time(t):
     except:
         return t
 
-def base_name(name):
-    n = name.lower().replace(".tv","").replace(".hd","")
-    n = re.sub(r'[^a-z0-9 ]',' ', n); n = re.sub(r'\s+',' ', n).strip()
-    return n
-
 tv_channels = {}
-channel_by_base = defaultdict(list)
 tv_progs = []
 seen_prog = set()
 has_epg = set()
@@ -44,12 +47,8 @@ for url in SOURCES:
         for ch in root.findall('channel'):
             cid = clean_id(ch.get('id',''))
             if not cid or cid.lower() in tv_channels: continue
-            dn = ch.find('display-name')
-            dname = dn.text if dn is not None and dn.text else cid
-            if dn is not None: dn.text = clean_id(dname)
-            ch.set('id', cid)
             tv_channels[cid.lower()] = ch
-            channel_by_base[base_name(dname)].append(cid)
+            ch.set('id', cid)
         for pr in root.findall('programme'):
             cid = clean_id(pr.get('channel',''))
             if not cid: continue
@@ -59,60 +58,38 @@ for url in SOURCES:
             if key in seen_prog: continue
             pr.set('start', s); pr.set('stop', e); pr.set('channel', cid)
             tv_progs.append(pr); seen_prog.add(key); has_epg.add(cid.lower())
-    except Exception as e:
-        print(e)
+    except: pass
 
-# Varyant birleştir
-for base, ids in channel_by_base.items():
-    if len(ids) <= 1: continue
-    all_p = []
-    for cid in ids: all_p.extend([p for p in tv_progs if p.get('channel','').lower()==cid.lower()])
-    for cid in ids:
-        for pr in all_p:
-            key = (cid.lower(), pr.get('start'))
-            if key in seen_prog: continue
-            np = ET.Element('programme', {'channel': cid, 'start': pr.get('start'), 'stop': pr.get('stop')})
-            for c in pr: nc = ET.Element(c.tag, c.attrib); nc.text = c.text; np.append(nc)
-            tv_progs.append(np); seen_prog.add(key)
+# EXTRA RADYOLARI EKLE
+for rad in EXTRA_RADIOS:
+    low = rad.lower()
+    if low not in tv_channels:
+        ch = ET.Element('channel', {'id': rad})
+        ET.SubElement(ch, 'display-name').text = rad
+        tv_channels[low] = ch
 
-# beinsports mapping - senin liste
-for base_target, aliases in {"bein sports 1":["beinsports","beinsports 1"],"bein sports 2":["beinsports 2"],"bein sports 3":["beinsports 3"],"bein sports 4":["beinsports 4"],"bein sports 5":["beinsports 5"],"bein sports haber":["beinsports haber"]}.items():
-    if base_target not in channel_by_base: continue
-    src = []
-    for sid in channel_by_base[base_target]: src.extend([p for p in tv_progs if p.get('channel','').lower()==sid.lower()])
-    for alias in aliases:
-        if alias.lower() not in tv_channels:
-            ch = ET.Element('channel', {'id': alias}); ET.SubElement(ch, 'display-name').text = alias; tv_channels[alias.lower()] = ch
-        for pr in src:
-            key = (alias.lower(), pr.get('start'))
-            if key in seen_prog: continue
-            np = ET.Element('programme', {'channel': alias, 'start': pr.get('start'), 'stop': pr.get('stop')})
-            for c in pr: nc = ET.Element(c.tag, c.attrib); nc.text = c.text; np.append(nc)
-            tv_progs.append(np); seen_prog.add(key)
-
-# FINAL - Radyo için ID yazdır
+# FINAL
 final_tv = ET.Element('tv')
 sorted_channels = sorted(tv_channels.values(), key=lambda x: x.get('id','').lower())
 for ch in sorted_channels: final_tv.append(ch)
 for pr in tv_progs: final_tv.append(pr)
 
+# EPG'SI OLMAYAN HER SEYE ID YAZDIR (7 GUN)
 now = datetime.now(timezone(timedelta(hours=3)))
 for low,ch in tv_channels.items():
     if low in has_epg: continue
     cid = ch.get('id')
     dname = ch.find('display-name').text if ch.find('display-name') is not None else cid
-    is_radio = any(x in dname.lower() for x in ["radyo","fm","radio","türkü"])
-    for day in range(7): # 7 GÜN
+    for day in range(7):
         ds = (now + timedelta(days=day)).replace(hour=0,minute=0,second=0,microsecond=0)
         de = ds + timedelta(days=1)
         prog = ET.Element('programme', {'channel': cid, 'start': ds.strftime("%Y%m%d%H%M%S +0300"), 'stop': de.strftime("%Y%m%d%H%M%S +0300")})
-        if is_radio:
-            ET.SubElement(prog, 'title', {'lang':'tr'}).text = f"📻 {dname}"
-            ET.SubElement(prog, 'desc', {'lang':'tr'}).text = f"{dname} canlı yayın"
-        else:
-            ET.SubElement(prog, 'title', {'lang':'tr'}).text = dname
-            ET.SubElement(prog, 'desc', {'lang':'tr'}).text = dname
+        ET.SubElement(prog, 'title', {'lang':'tr'}).text = dname
+        ET.SubElement(prog, 'desc', {'lang':'tr'}).text = f"{dname} Canli Yayin"
         final_tv.append(prog)
+    has_epg.add(low)
 
 ET.ElementTree(final_tv).write('epg.xml', encoding='utf-8', xml_declaration=True)
-print(f"BITTI: {len(sorted_channels)} kanal, EPG olmayan: {len(tv_channels)-len(has_epg)} tanesine ID yazildi")
+print(f"BITTI: {len(tv_channels)} kanal, radyolar dahil ID yazildi")
+for r in EXTRA_RADIOS[:15]:
+    print(f" - {r}")
